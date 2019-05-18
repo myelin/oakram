@@ -15,6 +15,7 @@
 
 NAME=oakram
 ROOT=.
+LAYERS=4
 SKIP_SETUP_DEFAULTS=1
 include common/Makefile.pcb
 

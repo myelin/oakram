@@ -30,16 +30,16 @@ LIBS:contrib
 LIBS:valves
 LIBS:oakram
 LIBS:oakram-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "A3010 4MB Ram"
+Date "2018-04-29"
+Rev "1.0"
 Comp ""
-Comment1 ""
+Comment1 "(c) Tim Tashpulatov 2017"
 Comment2 ""
 Comment3 ""
 Comment4 ""
