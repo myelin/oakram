@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name oakram-rescue)(type Legacy)(uri ${KIPRJMOD}/oakram-rescue.lib)(options "")(descr ""))
+  (lib (name oakram)(type Legacy)(uri ${KIPRJMOD}/oakram.lib)(options "")(descr ""))
+)

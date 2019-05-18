@@ -1,34 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:oakram
+EESchema Schematic File Version 4
 LIBS:oakram-cache
 EELAYER 26 0
 EELAYER END
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ZIP40 X1
+L oakram:ZIP40 X1
 U 1 1 59C97991
 P 4350 1800
 F 0 "X1" H 4350 3071 60  0000 C CNN
@@ -185,7 +155,7 @@ Text Label 5100 1950 0    60   ~ 0
 Wire Wire Line
 	3950 2650 3600 2650
 Text Label 3600 2650 2    60   ~ 0
-~OE
+~OE1
 Wire Wire Line
 	3950 2750 3600 2750
 Text Label 3600 2750 2    60   ~ 0
@@ -195,7 +165,7 @@ Wire Wire Line
 Text Label 5100 2650 0    60   ~ 0
 ~CAS1
 $Comp
-L ZIP40 X2
+L oakram:ZIP40 X2
 U 1 1 59C9833A
 P 4350 4125
 F 0 "X2" H 4350 5396 60  0000 C CNN
@@ -335,7 +305,7 @@ Text Label 5200 4300 0    60   ~ 0
 Wire Wire Line
 	3950 4975 3600 4975
 Text Label 3600 4975 2    60   ~ 0
-~OE
+~OE2
 Wire Wire Line
 	3950 5075 3600 5075
 Text Label 3600 5075 2    60   ~ 0
@@ -3198,7 +3168,7 @@ E4 28 E1 2D 18 A3 51 26 23 57 F5 DD 23 A5 8F 46 D7 75 FC 80 53 38 8B BA 90 A5 85
 EndData
 $EndBitmap
 $Comp
-L DRAM_1MX16_SOJ U2
+L oakram-rescue:DRAM_1MX16_SOJ U2
 U 1 1 59C98680
 P 8550 1725
 F 0 "U2" H 8550 2915 50  0000 C CNN
@@ -3209,7 +3179,7 @@ F 3 "" H 8550 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DRAM_1MX16_SOJ U1
+L oakram-rescue:DRAM_1MX16_SOJ U1
 U 1 1 59C98929
 P 8450 4375
 F 0 "U1" H 8450 5565 50  0000 C CNN
@@ -3328,9 +3298,9 @@ Text Label 7750 2475 2    60   ~ 0
 Text Label 7650 5125 2    60   ~ 0
 ~WE
 Text Label 7650 5225 2    60   ~ 0
-~OE
+~OE2
 Text Label 7750 2575 2    60   ~ 0
-~OE
+~OE1
 Text Label 7750 2175 2    60   ~ 0
 ~RAS
 Text Label 7650 4825 2    60   ~ 0
@@ -3362,9 +3332,9 @@ VSS
 Text GLabel 2525 5975 0    60   Output ~ 0
 VCC
 Wire Wire Line
-	2525 5975 6325 5975
+	2525 5975 2850 5975
 $Comp
-L C C1
+L Device:C C1
 U 1 1 59CBE190
 P 2850 6250
 F 0 "C1" H 2965 6333 50  0000 L CNN
@@ -3380,12 +3350,12 @@ Wire Wire Line
 	2850 6100 2850 5975
 Connection ~ 2850 5975
 Wire Wire Line
-	2525 6575 6325 6575
+	2525 6575 2850 6575
 Wire Wire Line
 	2850 6400 2850 6575
 Connection ~ 2850 6575
 $Comp
-L C C2
+L Device:C C2
 U 1 1 59CBE35E
 P 3350 6250
 F 0 "C2" H 3465 6333 50  0000 L CNN
@@ -3396,7 +3366,7 @@ F 3 "" H 3350 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L Device:C C3
 U 1 1 59CBE39E
 P 3800 6250
 F 0 "C3" H 3915 6333 50  0000 L CNN
@@ -3407,7 +3377,7 @@ F 3 "" H 3800 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Device:C C4
 U 1 1 59CBE4F8
 P 4325 6250
 F 0 "C4" H 4440 6333 50  0000 L CNN
@@ -3422,7 +3392,7 @@ Wire Wire Line
 Wire Wire Line
 	4325 6400 4325 6575
 $Comp
-L C C5
+L Device:C C5
 U 1 1 59CBE500
 P 4825 6250
 F 0 "C5" H 4940 6333 50  0000 L CNN
@@ -3433,7 +3403,7 @@ F 3 "" H 4825 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L Device:C C6
 U 1 1 59CBE506
 P 5275 6250
 F 0 "C6" H 5390 6333 50  0000 L CNN
@@ -3468,7 +3438,7 @@ Connection ~ 3800 6575
 Connection ~ 4325 6575
 Connection ~ 4325 5975
 $Comp
-L CP1 C7
+L Device:CP1 C7
 U 1 1 59CA5A3F
 P 6325 6300
 F 0 "C7" H 6440 6383 50  0000 L CNN
@@ -3484,4 +3454,28 @@ Connection ~ 5275 6575
 Wire Wire Line
 	6325 5975 6325 6150
 Connection ~ 5275 5975
+Wire Wire Line
+	2850 5975 3350 5975
+Wire Wire Line
+	2850 6575 3350 6575
+Wire Wire Line
+	3350 5975 3800 5975
+Wire Wire Line
+	3350 6575 3800 6575
+Wire Wire Line
+	3800 5975 4325 5975
+Wire Wire Line
+	4825 5975 5275 5975
+Wire Wire Line
+	4825 6575 5275 6575
+Wire Wire Line
+	3800 6575 4325 6575
+Wire Wire Line
+	4325 6575 4825 6575
+Wire Wire Line
+	4325 5975 4825 5975
+Wire Wire Line
+	5275 6575 6325 6575
+Wire Wire Line
+	5275 5975 6325 5975
 $EndSCHEMATC
