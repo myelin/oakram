@@ -17,3 +17,10 @@ NAME=oakram
 ROOT=.
 SKIP_SETUP_DEFAULTS=1
 include common/Makefile.pcb
+
+update_gerber:
+	rm gerber/*
+	rm -rf gerber_tmp
+	make
+	unzip oakram.zip -d gerber
+	mv oakram.zip gerber/
