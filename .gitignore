@@ -1,3 +1,5 @@
 *.bak
 *.bck
 *-bak
+gerber_tmp
+oakram.zip
