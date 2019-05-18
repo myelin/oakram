@@ -7,6 +7,6 @@ Originally by timtashpulatov, later updated by DanielJ at Stardot.
 Pictures
 --------
 
-![PCB front](pcb/pcb-front.png)
+![PCB front](pcb-front.png)
 
-![PCB back](pcb/pcb-back.png)
+![PCB back](pcb-back.png)
